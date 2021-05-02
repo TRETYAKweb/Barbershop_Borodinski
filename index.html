@@ -132,12 +132,12 @@
     <p>Ведите пожалуйста свой логин и пароль</p>
     <form action="#" class="login-form" method="POST">
       <p>
-        <label for="user-login" class="visually-hidden"></label>
-        <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+        <label for="user-login" class="visually-hidden">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
         <label for="user-password" class="visually-hidden">Пароль</label>
-        <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        <input class="login-icon-password" type="password" id="user-password" name="password" placeholder="Пароль">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
@@ -153,8 +153,7 @@
   <section class="modal modal-map">
     <h2>Как до нас добраться</h2>
     <p>
-      <img src="./img/map.jpg" width="780" height="560"
-        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img src="./img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
