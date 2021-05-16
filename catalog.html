@@ -6,9 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbershop Borodinski</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-nav">
       <a href="index.html" class="header-logo">
@@ -56,7 +60,7 @@
             </li>
             <li class="filter-option">
               <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-malin-goetz"
-                name="malin-goetz">
+                name="malin-goetz" disabled>
               <label for="filter-malin-goetz">Malin+Goetz</label>
             </li>
             <li class="filter-option">
@@ -73,21 +77,23 @@
         </fieldset>
         <fieldset>
           <legend>Группы товаров:</legend>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-shave"
-              name="product-group" value="shaving">
-            <label for="filter-shave">Бритвенные принадлежности</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-care"
-              name="product-group" value="hair-care" checked>
-            <label for="filter-care">Средства для ухода</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-hair-accessories"
-              name="product-group" value="accessories">
-            <label for="filter-hair-accessories">Аксессуары</label>
-          </li>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-shave"
+                name="product-group" value="shaving">
+              <label for="filter-shave">Бритвенные принадлежности</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-care"
+                name="product-group" value="hair-care" checked>
+              <label for="filter-care">Средства для ухода</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-hair-accessories"
+                name="product-group" value="accessories">
+              <label for="filter-hair-accessories">Аксессуары</label>
+            </li>
+          </ul>
         </fieldset>
         <button class="filter-button button">Показать</button>
       </form>
